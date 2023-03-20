@@ -1,1 +1,6 @@
-<div><button>Utiliser les XXX fr</button></div>
+<div>
+    <button (click) = "add100f()">Ajouter 100 Fr</button>
+    <tirelire [solde]= "un" (UseEvent) = "removeFrancs(1)"></tirelire>
+    <tirelire [solde]= "deux" (UseEvent) = "removeFrancs(2)"></tirelire>
+    <tirelire [solde]= "trois" (UseEvent) = "removeFrancs(3)"></tirelire>
+</div>

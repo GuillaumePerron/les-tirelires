@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'tirelire',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./tirelire.component.css']
 })
 export class TirelireComponent {
+  @Input()
+  solde!: number;
 
+  @Output()
+  UseEvent: EventEmitter<number> = new EventEmitter<number>();
+
+    utiliserFrancs(){
+      this.UseEvent.emit();
+    }
 }
