@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BoiteComponent } from './boite/boite.component';
+import { TirelireComponent } from './tirelire/tirelire.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BoiteComponent,
+    TirelireComponent
   ],
   imports: [
     BrowserModule,
