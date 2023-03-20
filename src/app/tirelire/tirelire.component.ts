@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-tirelire',
+  selector: 'tirelire',
   templateUrl: './tirelire.component.html',
   styleUrls: ['./tirelire.component.css']
 })
